@@ -1,14 +1,17 @@
 # spark : 
 
 ### Create git project in the GitHub
-1) refer to the google document MyDrive/4_IT/Git
+* refer to the google document MyDrive/4_IT/Git
 1) Create repository in the gitHub
 
 2) run the clone
-$ git clone https://github.com/psean21c/spark
-$ git push origin HEAD
+
+* $ git clone https://github.com/psean21c/spark
+
+* $ git push origin HEAD
 
 3) modify .gitignore file
+
 
 ### React command
 <!-- Create React Project -->
@@ -23,19 +26,21 @@ $ npm run start
     $ cd /Library/PostgreSQL/10/bin
 
 2) Jupyter
-    $ cd /usr/local/bin/notebook1
-    $ jupyter notebook
+
+*    $ cd /usr/local/bin/notebook1
+*    $ jupyter notebook
     
 3) react
-    $ cd /Users/simonpark/Documents/dev/react/cis-blog
+
+*    $ cd /Users/simonpark/Documents/dev/react/cis-blog
 
 
 ### version info
 <!-- node version -->
-v12.12.0
+Node: v12.12.0
 
 <!-- mongo DB -->
-db version v4.0.24
+mongo DB: db version v4.0.24
 
 
 ### Tutorial
