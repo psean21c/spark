@@ -12,6 +12,11 @@
 
 3) modify .gitignore file
 
+## Create branch before PR(Pull Request)
+* $ git checkout -b <your-branch>
+* $ git commit -m "added new module to project"
+* $ git push origin HEAD
+
 
 ### React command
 <!-- Create React Project -->
@@ -23,7 +28,7 @@ $ npm run start
 
 ### terminal
 1) DB 
-    $ cd /Library/PostgreSQL/10/bin
+*    $ cd /Library/PostgreSQL/10/bin
 
 2) Jupyter
 
@@ -37,32 +42,35 @@ $ npm run start
 
 ### version info
 <!-- node version -->
-Node: v12.12.0
+* Node: v12.12.0
 
 <!-- mongo DB -->
-mongo DB: db version v4.0.24
+* mongo DB: db version v4.0.24
 
 
 ### Tutorial
 <!-- Ninja -->
-https://github.com/iamshaunjp/Complete-React-Tutorial
+
+* ninja https://github.com/iamshaunjp/Complete-React-Tutorial
+
 <!-- 3/23 -->
-https://www.youtube.com/watch?v=9D1x7-2FmTA&list=PL4cUxeGkcC9gZD-Tvwfod2gaISzfRiP9d&index=3
+
+* React Tutorial https://www.youtube.com/watch?v=9D1x7-2FmTA&list=PL4cUxeGkcC9gZD-Tvwfod2gaISzfRiP9d&index=3
 
 <!-- 40 min: Aria Keshmiri (White guy)
 AWS Fullstack Serverless Application (lambda, API Gateway, Postgres, S3, React) -->
-https://www.youtube.com/watch?v=dZQbRLL7qxE
+* AWS -Aria https://www.youtube.com/watch?v=dZQbRLL7qxE
 
 
 <!-- 25 min: (Black guy)
 Deploy static website to AWS with HTTPS - S3, Route 53, CloudFront, Certificate Manager -->
-https://www.youtube.com/watch?v=lB4DTqMEumY&t=543s
+* AWS-Freenom https://www.youtube.com/watch?v=lB4DTqMEumY&t=543s
 
 <!--  Dr. Joanne Skiles
 How to Read and Write to DynamoDB using AWS Lambda
  -->
-https://www.youtube.com/watch?v=f7o8RV3Edck
+* AWS-Dr.Joanne https://www.youtube.com/watch?v=f7o8RV3Edck
 
 <!-- React Official Site -->
-https://reactjs.org/docs/introducing-jsx.html
+* React-Official https://reactjs.org/docs/introducing-jsx.html
 
