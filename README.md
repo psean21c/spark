@@ -1,4 +1,4 @@
-# spark : 
+# project - spark 
 
 ### Create git project in the GitHub
 * refer to the google document MyDrive/4_IT/Git
@@ -6,8 +6,7 @@
 
 2) run the clone
 
-* $ git clone https://github.com/psean21c/spark
-
+* $ git clone [http://github.com/spark](https://github.com/psean21c/spark) 
 * $ git push origin HEAD
 
 3) modify .gitignore file
@@ -28,16 +27,21 @@ $ npm run start
 
 ### terminal
 1) DB 
-*    $ cd /Library/PostgreSQL/10/bin
+```
+    $ cd /Library/PostgreSQL/10/bin
+```
 
 2) Jupyter
-
-*    $ cd /usr/local/bin/notebook1
-*    $ jupyter notebook
+```
+    $ cd /usr/local/bin/notebook1
+    $ jupyter notebook
+```
     
 3) react
 
-*    $ cd /Users/simonpark/Documents/dev/react/cis-blog
+```
+    $ cd /Users/simonpark/Documents/dev/react/cis-blog
+```
 
 
 ### version info
@@ -49,28 +53,27 @@ $ npm run start
 
 
 ### Tutorial
-<!-- Ninja -->
 
-* ninja https://github.com/iamshaunjp/Complete-React-Tutorial
+[ninja github](https://github.com/iamshaunjp/Complete-React-Tutorial)
 
 <!-- 3/23 -->
-
-* React Tutorial https://www.youtube.com/watch?v=9D1x7-2FmTA&list=PL4cUxeGkcC9gZD-Tvwfod2gaISzfRiP9d&index=3
+[Youtube - React Tutorial](https://www.youtube.com/watch?v=9D1x7-2FmTA&list=PL4cUxeGkcC9gZD-Tvwfod2gaISzfRiP9d&index=3)
 
 <!-- 40 min: Aria Keshmiri (White guy)
 AWS Fullstack Serverless Application (lambda, API Gateway, Postgres, S3, React) -->
-* AWS -Aria https://www.youtube.com/watch?v=dZQbRLL7qxE
+[Youtube - AWS, Aria](https://www.youtube.com/watch?v=dZQbRLL7qxE)
 
 
 <!-- 25 min: (Black guy)
 Deploy static website to AWS with HTTPS - S3, Route 53, CloudFront, Certificate Manager -->
-* AWS-Freenom https://www.youtube.com/watch?v=lB4DTqMEumY&t=543s
+[Youtube - AWS, Freenom](https://www.youtube.com/watch?v=lB4DTqMEumY&t=543s)
 
 <!--  Dr. Joanne Skiles
 How to Read and Write to DynamoDB using AWS Lambda
  -->
-* AWS-Dr.Joanne https://www.youtube.com/watch?v=f7o8RV3Edck
+[Youtube - AWS, Dr.Joanne](https://www.youtube.com/watch?v=f7o8RV3Edck)
 
 <!-- React Official Site -->
-* React-Official https://reactjs.org/docs/introducing-jsx.html
+[React-Official](https://reactjs.org/docs/introducing-jsx.html)
 
+[React Bootstrap](https://react-bootstrap.github.io/)
