@@ -43,6 +43,14 @@ $ npm run start
     $ cd /Users/simonpark/Documents/dev/react/cis-blog
 ```
 
+### command short cut in React
+```
+sfc : Stateless Function Component
+
+```
+[react auto complete-1](https://marketplace.visualstudio.com/items?itemName=burkeholland.simple-react-snippets)
+
+[react auto complete](https://www.digitalocean.com/community/posts/write-react-faster-with-simple-react-snippets)
 
 ### version info
 <!-- node version -->
@@ -50,6 +58,7 @@ $ npm run start
 
 <!-- mongo DB -->
 * mongo DB: db version v4.0.24
+* react : 17.0.2
 
 
 ### Tutorial

@@ -1,25 +1,26 @@
-import './App.css';
 // import axios from 'axios'
 
 // import {useState} from 'react';
-// import React from 'react' // version 16 vs 17
-import React, { useEffect, useState } from "react";
+// import React, { useEffect, useState } from "react";
 
 // import {Button} from "antd"
-
+import React from 'react';
+import Navbar from './Navbar';
+import Home from './Home';
 
 // state management
 function App() {
-  const title = "Welcome to React agan"
-  const likes = 50;
-  
+  const REACT_VERSION = React.version;
 
   return (
     <div className="App">
+      <Navbar/>
       <div className="content">
-        <h1>{title}</h1>
-        <p> liked {likes}</p>
+        <Home/>
+        <p> version is {REACT_VERSION}</p>
       </div>
+      
+      
     </div>
   )
 }
