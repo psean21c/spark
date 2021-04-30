@@ -1,4 +1,4 @@
-import {useState} from 'react';
+import {useState, useEffect} from 'react';
 
 import BlogList from './BlogList';
 const Home = () => {
@@ -8,9 +8,25 @@ const Home = () => {
         {title:'decided', body: 'Lets do it again', author: 'cindy', id: 2},
         {title:'hesitated', body: 'still in limbo', author: 'david', id: 3}
     ])
+
+    const [name, setName] = useState('spark');
+
+    useEffect(() => {
+        console.log('useEffect');
+
+    },[name])
+
+    const handleDelete = (id) => {
+        console.log('handled')
+        const newBlogs = blogs.filter(blog => blog.id !== id);
+        setBlogs(newBlogs);
+    }
     return ( 
         <div className="home">
-            <BlogList blogs={blogs} title="Connected Blogs !!"/>
+            <BlogList blogs={blogs} title="Connected Blogs !!" handleDelete ={handleDelete}/>
+            {/* <BlogList blogs={blogs.filter( (blog) => blog.author === 'cindy')} title="Cindy's Blogs !!"/> */}
+            <button onClick={() => setName('hero')}>name change</button>
+            <p>{name}</p>
         </div>
      );
 }
