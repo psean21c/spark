@@ -1,13 +1,14 @@
-
+/**
+    Below are the same way to pass properties
+    1) only pass "props" and distribute
+    (props) => {}
+    const blogs = props.blogs;
+    const title = props.title;
+    console.log(props,blogs)
+    2) pass seperate variables
+    ({blogs, title, handleDelete})
+*/
 const BlogList = ({blogs, title, handleDelete}) => {
-    // Below are the same way to pass properties
-    // 1) only pass "props" and distribute
-    // (props) => {}
-    // const blogs = props.blogs;
-    // const title = props.title;
-    // console.log(props,blogs)
-    // 2) pass seperate variables
-    // ({blogs, title, handleDelete})
 
     return ( 
         <div className="blog-list">
