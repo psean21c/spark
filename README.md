@@ -1,22 +1,5 @@
 # project - spark 
 
-### Create git project in the GitHub
-* refer to the google document MyDrive/4_IT/Git
-1) Create repository in the gitHub
-
-2) run the clone
-
-* $ git clone [http://github.com/spark](https://github.com/psean21c/spark) 
-* $ git push origin HEAD
-
-3) modify .gitignore file
-
-## Create branch before PR(Pull Request)
-* $ git checkout -b <your-branch>
-* $ git commit -m "added new module to project"
-* $ git push origin HEAD
-
-
 ### React command
 <!-- Create React Project -->
 $ npx create-react-app cis-blog
@@ -44,10 +27,22 @@ $ npm run start
 ```
 
 ### command short cut in React
+* sfc : Stateless Function Component
 ```
-sfc : Stateless Function Component
+const  = () => {
+    return (  );
+}
+export default ;
+```
+ 
 
+div*2.form-input : 
 ```
+<div className="form-input"></div>
+<div className="form-input"></div>
+```
+
+
 [react auto complete-1](https://marketplace.visualstudio.com/items?itemName=burkeholland.simple-react-snippets)
 
 [react auto complete](https://www.digitalocean.com/community/posts/write-react-faster-with-simple-react-snippets)
@@ -86,3 +81,5 @@ How to Read and Write to DynamoDB using AWS Lambda
 [React-Official](https://reactjs.org/docs/introducing-jsx.html)
 
 [React Bootstrap](https://react-bootstrap.github.io/)
+
+[CORS policy explanation](http://definitiontech.co/cross-origin-resource-sharing-cors-what-is-it/)

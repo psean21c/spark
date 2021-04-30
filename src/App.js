@@ -7,20 +7,23 @@
 import React from 'react';
 import Navbar from './Navbar';
 import Home from './Home';
+import Blog from './Blog';
 
 // state management
 function App() {
-  const REACT_VERSION = React.version;
+// class App extends React.Component {
+    const REACT_VERSION = React.version;
+
+
 
   return (
     <div className="App">
       <Navbar/>
       <div className="content">
         <Home/>
+        <Blog/>
         <p> version is {REACT_VERSION}</p>
       </div>
-      
-      
     </div>
   )
 }
