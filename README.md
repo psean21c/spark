@@ -26,7 +26,7 @@ $ npm run start
     $ cd /Users/simonpark/Documents/dev/react/cis-blog
 ```
 
-### command short cut in React
+### command short cut [Simple React Snippets]
 * sfc : Stateless Function Component
 ```
 const  = () => {

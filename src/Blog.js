@@ -27,15 +27,13 @@ class Blog extends React.Component{
             body: this.state.body
         };
 
-        // 1) axios.post('/add', payload).then().catch()
-        // 2) axios({url:"",method:"POST,data:payload"}).then().catch()
         axios({
             url: '/add',
             method:'POST',
             data: payload
         })
         .then((res)=>{
-            console.log('Data sent to server: ', payload);
+            // console.log('Data sent to server: ', payload);
             console.log('respose from server:', res.data)
         })
         .catch((error)=>{
@@ -45,7 +43,6 @@ class Blog extends React.Component{
 
 
     render() {
-        // console.log('[render] state:', this.state)
         return(
             <div>
                 <form onSubmit={this.handleSubmit}>

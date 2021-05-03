@@ -1,30 +1,36 @@
-// import axios from 'axios'
 
-// import {useState} from 'react';
-// import React, { useEffect, useState } from "react";
-
-// import {Button} from "antd"
-import React from 'react';
 import Navbar from './Navbar';
 import Home from './Home';
 import Blog from './Blog';
+import BlogDetails from './BlogDetails';
+import Login from './Login';
 
-// state management
+import {BrowserRouter as Router, Route,Switch} from 'react-router-dom';
+
+
 function App() {
-// class App extends React.Component {
-    const REACT_VERSION = React.version;
-
-
-
   return (
+    <Router>
     <div className="App">
       <Navbar/>
       <div className="content">
-        <Home/>
-        <Blog/>
-        <p> version is {REACT_VERSION}</p>
+        <Switch>
+          <Route exact path="/">
+            <Home/>
+          </Route>
+          <Route path="/create">
+            <Blog/>
+          </Route>
+          <Route path="/blogs/:id">
+            <BlogDetails/>
+          </Route>
+          <Route path="/login">
+            <Login/>
+          </Route>
+        </Switch>
       </div>
     </div>
+    </Router>
   )
 }
 
