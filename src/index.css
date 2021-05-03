@@ -38,10 +38,14 @@
 .blog-preview {
   padding: 10px 16px;
   margin: 20px 0;
-  border-bottom: 1px solid #fafafa;
+  border-bottom: 3px solid #a7e2b9;
+  border-left: 1px solid #a7e2b9;
+  border-right: 1px solid #a7e2b9;
+  border-top: 1px solid #a7e2b9;  
+
 }
 .blog-preview:hover {
-  box-shadow: 1px 3px 5px rgba(0,0,0,0.1);
+  box-shadow: 3px 5px 10px rgba(0,0,0,0.1);
 }
 .blog-preview h2 {
   font-size: 20px;

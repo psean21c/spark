@@ -21,7 +21,6 @@ class Blog extends React.Component{
     };
 
     handleSubmit = (event) => {
-        console.log('handleSubmit')
         event.preventDefault();
         const payload = {
             title: this.state.title,
@@ -46,7 +45,7 @@ class Blog extends React.Component{
 
 
     render() {
-        console.log('state:', this.state)
+        // console.log('[render] state:', this.state)
         return(
             <div>
                 <form onSubmit={this.handleSubmit}>

@@ -3,33 +3,43 @@ import BlogList from './BlogList';
 const Home = () => {
 
     // useState()
-    const [blogs, setBlogs] = useState([
-        {title:'started', body: 'committment', author: 'spark', id: 1},
-        {title:'decided', body: 'Lets do it again', author: 'cindy', id: 2},
-        {title:'hesitated', body: 'still in limbo', author: 'david', id: 3}
-    ])
-
-    const [name, setName] = useState('spark');
+    const [blogs, setBlogs] = useState(null)
+    const [isPending, setIsPending] = useState(true);
+    const [error, setError] = useState(null);
 
     // useEffect()
     useEffect(() => {
-        console.log('useEffect');
-
-    },[name])
+        setTimeout(() => {
+            fetch('/students')
+            .then(res => {
+                if (!res.ok) {
+                    throw Error('Not able to fetch data from server');
+                }
+                return res.json();
+            })
+            .then(data => {
+                setBlogs(data);
+                setIsPending(false);
+                setError(null);
+            })
+            .catch(err => {
+                setIsPending(false);
+                setError(err.message);
+            });    
+        },1000);
+    },[])
 
     // this method will be called from ./BolgList
     const handleDelete = (id) => {
-        // console.log('handleDelete')
         const newBlogs = blogs.filter(blog => blog.id !== id);
         setBlogs(newBlogs);
     }
 
     return ( 
         <div className="home">
-            <BlogList blogs={blogs} title="Connected Blogs !!" handleDelete ={handleDelete}/>
-            <BlogList blogs={blogs.filter( (blog) => blog.author === 'cindy')} title="Cindy's Blogs !!"/>
-            <button onClick={() => setName('hero')}>name change</button>
-            <p>{name}</p>
+            {error && <div>{error}</div>}
+            {isPending && <div>Loading ...</div>}
+            {blogs && <BlogList blogs={blogs} title="Connected Blogs !!" handleDelete ={handleDelete}/>}
         </div>
      );
 }
