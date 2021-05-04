@@ -5,7 +5,6 @@ const Home = () => {
     const url = "./students"
     const {data: blogs,isPending, error} = useFetch(url);
 
-
     return ( 
         <div className="home">
             {error && <div>{error}</div>}
