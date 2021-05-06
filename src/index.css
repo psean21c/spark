@@ -49,8 +49,14 @@
 }
 .blog-preview h2 {
   font-size: 20px;
-  color: #f1356d;
+  color: #4835f1;
   margin-bottom: 8px;
+}
+
+.blog-preview p {
+  font-size: 15px;
+  color: #134118;
+  margin-bottom: 4px;
 }
 
 .create input, .create textarea, .create select {

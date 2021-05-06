@@ -8,8 +8,8 @@ const StudentList = ({blogs, title, handleDelete}) => {
             {blogs.map((blog)=> (
                 <div className="blog-preview" key={blog._id}>
                     <Link to={`/blogs/${blog._id}`}>
-                        <h2> {blog.title}</h2>
-                        <p>Written by {blog.author}</p>
+                        <h2> {blog.firstName} {blog.lastName}</h2>
+                        <p>Written by {blog.staff}</p>
                     </Link>
                 </div>
             ))}

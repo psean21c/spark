@@ -1,6 +1,6 @@
 import { useState } from "react";
 
-const Create = () => {
+const StudentCreate = () => {
   const [title, setTitle] = useState('');
   const [body, setBody] = useState('');
   const [author, setAuthor] = useState('yoshi');
@@ -53,4 +53,4 @@ const Create = () => {
   );
 }
  
-export default Create;
+export default StudentCreate;

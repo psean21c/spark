@@ -2,9 +2,6 @@
 import Navbar from './Navbar';
 import StudentHome from './StudentHome';
 import Student from './Student';
-// import Create from './Create';
-// import BlogDetails from './BlogDetails';
-// import Login from './Login';
 
 import {BrowserRouter as Router, Route,Switch} from 'react-router-dom';
 
