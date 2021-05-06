@@ -1,9 +1,9 @@
 
 import Navbar from './Navbar';
 import StudentHome from './StudentHome';
-import Student from './Student';
+import StudentCreate from './StudentCreate';
 
-import {BrowserRouter as Router, Route,Switch} from 'react-router-dom';
+import {BrowserRouter as Router, Route, Switch} from 'react-router-dom';
 
 
 function App() {
@@ -16,8 +16,8 @@ function App() {
           <Route exact path="/">
             <StudentHome/>
           </Route>
-          <Route path="/add">
-            <Student/>
+          <Route path="/create">
+            <StudentCreate/>
           </Route>
         </Switch>
       </div>
