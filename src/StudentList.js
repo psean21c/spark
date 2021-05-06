@@ -1,6 +1,6 @@
 import {Link} from 'react-router-dom';
 
-const BlogList = ({blogs, title, handleDelete}) => {
+const StudentList = ({blogs, title, handleDelete}) => {
 
     return ( 
         <div className="blog-list">
@@ -18,4 +18,4 @@ const BlogList = ({blogs, title, handleDelete}) => {
      );
 }
  
-export default BlogList;
+export default StudentList;

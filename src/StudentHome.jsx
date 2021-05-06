@@ -1,7 +1,7 @@
-import BlogList from './BlogList';
+import StudentList from './StudentList';
 import useFetch from './useFetch';
 
-const Home = () => {
+const StudentHome = () => {
     const url = "./students"
     const {data: blogs,isPending, error} = useFetch(url);
 
@@ -9,9 +9,9 @@ const Home = () => {
         <div className="home">
             {error && <div>{error}</div>}
             {isPending && <div>Loading ...</div>}
-            {blogs && <BlogList blogs={blogs} title="Connected Blogs !!"/>}
+            {blogs && <StudentList blogs={blogs} title="Connected Students !!"/>}
         </div>
      );
 }
  
-export default Home;
+export default StudentHome;

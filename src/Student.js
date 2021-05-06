@@ -2,7 +2,7 @@ import axios from 'axios';
 import React from 'react';
 
 
-class Blog extends React.Component{
+class Student extends React.Component{
 
     state = {
         title: '',
@@ -74,4 +74,4 @@ class Blog extends React.Component{
     }
 }
 
-export default Blog;
+export default Student;
