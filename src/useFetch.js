@@ -13,19 +13,23 @@ const useFetch = (url) => {
             const abortCont = new AbortController();
 
             setTimeout(() => {
+                // console.log("2")
                 fetch(url, {signal: abortCont.signal})
                 .then(res => {
+                    // console.log("3" , res.json())
                     if (!res.ok) {
                         throw Error('Not able to fetch data from server');
                     }
                     return res.json();
                 })
                 .then(data => {
-                    setData(data);
+                    console.log("4", data)
+                    setData(data.body);
                     setIsPending(false);
                     setError(null);
                 })
                 .catch(err => {
+                    // console.log("5")
                     if(err.name ==='AbortError'){
                         console.log('fetch aborted');
                     } else{

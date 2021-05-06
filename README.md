@@ -64,7 +64,9 @@ div*2.form-input :
 [Youtube - React Tutorial](https://www.youtube.com/watch?v=9D1x7-2FmTA&list=PL4cUxeGkcC9gZD-Tvwfod2gaISzfRiP9d&index=3)
 
 <!-- 40 min: Aria Keshmiri (White guy)
-AWS Fullstack Serverless Application (lambda, API Gateway, Postgres, S3, React) -->
+AWS Fullstack Serverless Application (lambda, API Gateway, Postgres, S3, React) 
+Need to watch the video until 7:40 to see the connection between lambda + API Gateway
+-->
 [Youtube - AWS, Aria](https://www.youtube.com/watch?v=dZQbRLL7qxE)
 
 
