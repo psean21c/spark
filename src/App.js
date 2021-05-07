@@ -1,39 +1,29 @@
-import './App.css';
-import axios from 'axios'
 
-// import {useState} from 'react';
-// import React from 'react'
-import React, { useEffect, useState } from "react";
-import Cards from './Cards.js'
+import Navbar from './Navbar';
+import StudentHome from './StudentHome';
+import StudentCreate from './StudentCreate';
 
-import {Button} from "antd"
-const onClick2 = () => console.log("Works!");
+import {BrowserRouter as Router, Route, Switch} from 'react-router-dom';
 
 
-// state management
 function App() {
-  const [data, setData] = useState(null)
-
-  useEffect(()=> { // side effect  : async logic 
-    axios.get('https://au7u1y8j67.execute-api.us-east-1.amazonaws.com/lambdaStageTest1/resourcestudents')
-    .then((res) => {
-      // console.log(res.data.body);
-     res.data && setData(res.data.body);
-    })
-    .catch((err) => console.log(err))
-  },[])
-  return data ? (
+  return (
+    <Router>
     <div className="App">
-      {data.map((info,index) => {
-        return <Cards key={index} info={info}/>
-      })}
-    <Button type="primary" onClick="onClick2" loading> Tree Loading</Button>
-          
+      <Navbar/>
+      <div className="content">
+        <Switch>
+          <Route exact path="/">
+            <StudentHome/>
+          </Route>
+          <Route path="/create">
+            <StudentCreate/>
+          </Route>
+        </Switch>
+      </div>
     </div>
-
-) : <div>
-    loading
-  </div>; // loading icon...
+    </Router>
+  )
 }
 
 export default App;
