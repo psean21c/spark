@@ -16,7 +16,8 @@ const useFetch = (url) => {
                 // console.log("2")
                 fetch(url, {signal: abortCont.signal})
                 .then(res => {
-                    // console.log("3" , res.json())
+                    // be careful ... will get error message - already used json()
+                    // console.log("3" , res.json()) 
                     if (!res.ok) {
                         throw Error('Not able to fetch data from server');
                     }
@@ -29,7 +30,6 @@ const useFetch = (url) => {
                     setError(null);
                 })
                 .catch(err => {
-                    // console.log("5")
                     if(err.name ==='AbortError'){
                         console.log('fetch aborted');
                     } else{

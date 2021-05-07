@@ -8,9 +8,8 @@ const StudentCreate = () => {
   const handleSubmit = (e) => {
     e.preventDefault(); // refresh the page after submit
     const student = { firstName, lastName, staff };
-
-    // console.log(blog);
-    fetch('/add/', {
+    const url = "https://2iwofld0wf.execute-api.us-east-1.amazonaws.com/devStage/writeStudent";
+    fetch(url, {
       method: 'POST',
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify(student)
@@ -46,7 +45,7 @@ const StudentCreate = () => {
           <option value="eugine">eugine</option>
         </select>
         <button>Add Student</button>
-        <p>{firstName}</p>
+        <p>[{firstName} {lastName} ] will be added by staff [{staff}]</p>
       </form>
     </div>
   );

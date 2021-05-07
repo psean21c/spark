@@ -56,9 +56,7 @@ div*2.form-input :
 * react : 17.0.2
 
 
-### Tutorial
-
-[ninja github](https://github.com/iamshaunjp/Complete-React-Tutorial)
+### Youtube - Tutorial
 
 <!-- 3/23 -->
 [Youtube - React Tutorial](https://www.youtube.com/watch?v=9D1x7-2FmTA&list=PL4cUxeGkcC9gZD-Tvwfod2gaISzfRiP9d&index=3)
@@ -79,9 +77,16 @@ How to Read and Write to DynamoDB using AWS Lambda
  -->
 [Youtube - AWS, Dr.Joanne](https://www.youtube.com/watch?v=f7o8RV3Edck)
 
+<!--  -->
+[Youtube - AWS Cloud Path](https://www.youtube.com/watch?v=Tc1YIOAbyS0)
+
+### API - gitHub / document
+
 <!-- React Official Site -->
 [React-Official](https://reactjs.org/docs/introducing-jsx.html)
 
 [React Bootstrap](https://react-bootstrap.github.io/)
 
 [CORS policy explanation](http://definitiontech.co/cross-origin-resource-sharing-cors-what-is-it/)
+
+[ninja github](https://github.com/iamshaunjp/Complete-React-Tutorial)
