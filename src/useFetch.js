@@ -9,22 +9,20 @@ const useFetch = (url) => {
     
         // useEffect
         useEffect(() => {
-
             const abortCont = new AbortController();
 
             setTimeout(() => {
-                // console.log("2")
                 fetch(url, {signal: abortCont.signal})
                 .then(res => {
-                    // be careful ... will get error message - already used json()
-                    // console.log("3" , res.json()) 
+                    const result = res.json()
+                    // console.log("3" , result) 
                     if (!res.ok) {
                         throw Error('Not able to fetch data from server');
                     }
-                    return res.json();
+                    return result;
                 })
                 .then(data => {
-                    console.log("4", data)
+                    // console.log("4", data)
                     setData(data.body);
                     setIsPending(false);
                     setError(null);

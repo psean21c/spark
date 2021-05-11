@@ -2,7 +2,7 @@ import StudentList from './StudentList';
 import useFetch from './useFetch';
 
 const StudentHome = () => {
-    const url = "https://2iwofld0wf.execute-api.us-east-1.amazonaws.com/devStage/readStudents"
+    const url = "https://k3rx4dln3m.execute-api.us-east-1.amazonaws.com/version2/student";
     const {data: students,isPending, error} = useFetch(url);
 
     return ( 

@@ -8,13 +8,15 @@ const StudentCreate = () => {
   const handleSubmit = (e) => {
     e.preventDefault(); // refresh the page after submit
     const student = { firstName, lastName, staff };
-    const url = "https://2iwofld0wf.execute-api.us-east-1.amazonaws.com/devStage/writeStudent";
+    const url = "https://k3rx4dln3m.execute-api.us-east-1.amazonaws.com/version2/student";
     fetch(url, {
       method: 'POST',
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify(student)
     }).then(() => {
-      console.log('new student added');
+      console.log('new student' + firstName + ' added');
+      setFirstName('');
+      setLastName('');
     })    
   }
 

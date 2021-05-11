@@ -90,3 +90,5 @@ How to Read and Write to DynamoDB using AWS Lambda
 [CORS policy explanation](http://definitiontech.co/cross-origin-resource-sharing-cors-what-is-it/)
 
 [ninja github](https://github.com/iamshaunjp/Complete-React-Tutorial)
+
+[React Table](https://www.youtube.com/watch?v=YwP4NAZGskg&list=PLC3y8-rFHvwgWTSrDiwmUsl4ZvipOw9Cz&index=1)
